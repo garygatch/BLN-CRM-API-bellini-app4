@@ -1,0 +1,129 @@
+{
+  "name": "home",
+  "type": "page",
+  "url": "/home",
+  "params": {},
+  "variables": [
+    {
+      "name": "lontiDemoApiCrmApi",
+      "type": "open-api",
+      "id": "67bd1bd560ae4cddb7bf30cf"
+    },
+    {
+      "name": "get",
+      "type": "method",
+      "description": "",
+      "body": "$ctrl.lontiDemoApiCrmApi.lonti_demo_api_crm_services_company_SelectAllCompany({\n    limit: 5000\n}).then(result => {\n    /* process the result */\nconsole.log(result.data.company)\n})",
+      "invokeOnLoad": true,
+      "isAsync": false,
+      "returnType": {
+        "name": "any"
+      },
+      "parameters": []
+    }
+  ],
+  "children": [
+    {
+      "name": "Breadcrumbs",
+      "nodeName": "bln-breadcrumbs",
+      "elementId": "",
+      "attributes": [
+        {
+          "property": "core",
+          "value": ""
+        },
+        {
+          "property": "data-id",
+          "value": "29B79h"
+        }
+      ],
+      "classList": [],
+      "conditionalClasses": [],
+      "conditionalStyles": [],
+      "contentType": "text",
+      "displayExpression": "",
+      "events": {},
+      "iterate": {
+        "array": "",
+        "variable": "",
+        "trackByIndex": false
+      },
+      "styles": [],
+      "children": [],
+      "comments": "",
+      "type": "core-component",
+      "id": "breadcrumbs",
+      "expressions": []
+    },
+    {
+      "name": "Checkbox",
+      "nodeName": "bln-checkbox",
+      "elementId": "",
+      "attributes": [
+        {
+          "property": "core",
+          "value": ""
+        },
+        {
+          "property": "data-id",
+          "value": "gujhef"
+        }
+      ],
+      "classList": [],
+      "conditionalClasses": [],
+      "conditionalStyles": [],
+      "contentType": "text",
+      "displayExpression": "",
+      "events": {},
+      "iterate": {
+        "array": "",
+        "variable": "",
+        "trackByIndex": false
+      },
+      "styles": [],
+      "children": [],
+      "comments": "",
+      "type": "core-component",
+      "id": "checkbox",
+      "expressions": [],
+      "formControl": {
+        "modelName": "checked"
+      }
+    },
+    {
+      "name": "Chip List",
+      "nodeName": "bln-chip-list",
+      "elementId": "",
+      "attributes": [
+        {
+          "property": "core",
+          "value": ""
+        },
+        {
+          "property": "data-id",
+          "value": "lodk3W"
+        }
+      ],
+      "classList": [],
+      "conditionalClasses": [],
+      "conditionalStyles": [],
+      "contentType": "text",
+      "displayExpression": "",
+      "events": {},
+      "iterate": {
+        "array": "",
+        "variable": "",
+        "trackByIndex": false
+      },
+      "styles": [],
+      "children": [],
+      "comments": "",
+      "type": "core-component",
+      "id": "chip-list",
+      "expressions": [],
+      "formControl": {
+        "modelName": "values"
+      }
+    }
+  ]
+}
